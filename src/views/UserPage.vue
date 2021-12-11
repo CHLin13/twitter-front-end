@@ -43,8 +43,6 @@ export default {
 
   .trend-section {
     position: sticky;
-  }
-  .trend-section {
     top: 15px;
     right: 0%;
   }

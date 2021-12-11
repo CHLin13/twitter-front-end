@@ -28,6 +28,17 @@
           </li>
           <li class="list-item">
             <router-link
+              :to="{ name: 'ChatRoomPage' }"
+              :class="{
+                focus: this.$route.path === `/chatroom`,
+              }"
+            >
+              <font-awesome-icon class="icon" icon="cog" />
+              <span>公開聊天室</span>
+            </router-link>
+          </li>
+          <li class="list-item">
+            <router-link
               :to="{ name: 'SettingPage', params: { id: currentUser.id } }"
               :class="{
                 focus: this.$route.path === `/setting`,

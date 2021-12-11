@@ -13,6 +13,11 @@ const routes = [
     component: MainPage
   },
   {
+    path: '/chatroom',
+    name: 'ChatRoomPage',
+    component: () => import('../views/ChatRoomPage.vue')
+  },
+  {
     path: '/reply_list/:id',
     name: 'Tweet',
     component: () => import('../views/Tweet.vue')
